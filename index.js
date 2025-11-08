@@ -22,4 +22,4 @@ app.all(/.*/, function (req, res) {
   return res.status(404).json({ message: "Page not found" });
 });
 
-app.listen(3000, () => console.log("Server running"));
+app.listen(process.env.PORT, () => console.log("Server running"));
